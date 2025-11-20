@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NeonPulse — Modern Creative Studio</title>
+    <meta name="description" content="NeonPulse is a next-gen creative studio crafting immersive digital experiences through bleeding-edge design and development.">
+    <meta name="keywords" content="creative agency, web design, animations, branding, digital experiences">
+    <meta name="author" content="NeonPulse Team">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E⚡%3C/text%3E%3C/svg%3E">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body data-theme="dark">
+    <div id="loader" class="loader" aria-hidden="true">
+        <div class="loader__grid">
+            <span class="loader__cube"></span>
+            <span class="loader__cube"></span>
+            <span class="loader__cube"></span>
+            <span class="loader__cube"></span>
+            <span class="loader__cube"></span>
+            <span class="loader__cube"></span>
+            <span class="loader__cube"></span>
+            <span class="loader__cube"></span>
+            <span class="loader__cube"></span>
+        </div>
+        <p class="loader__text">Calibrating Reality…</p>
+    </div>
+
+    <header class="header" id="header">
+        <div class="container header__container">
+            <a href="#home" class="logo" aria-label="NeonPulse Home">
+                <svg class="logo__icon" width="40" height="40" viewBox="0 0 40 40" fill="none" aria-hidden="true">
+                    <path d="M20 0L32.3205 7.67949L40 20L32.3205 32.3205L20 40L7.67949 32.3205L0 20L7.67949 7.67949L20 0Z" fill="url(#logoGradient)"/>
+                    <defs>
+                        <linearGradient id="logoGradient" x1="20" y1="0" x2="20" y2="40" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#FF0055"/>
+                            <stop offset="1" stop-color="#00F0FF"/>
+                        </linearGradient>
+                    </defs>
+                </svg>
+                <span class="logo__text">NeonPulse</span>
+            </a>
+
+            <nav class="nav" id="nav" aria-label="Primary Navigation">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link" data-section="home">Home</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link" data-section="about">About</a></li>
+                    <li class="nav__item"><a href="#services" class="nav__link" data-section="services">Services</a></li>
+                    <li class="nav__item"><a href="#gallery" class="nav__link" data-section="gallery">Gallery</a></li>
+                    <li class="nav__item"><a href="#testimonials" class="nav__link" data-section="testimonials">Testimonials</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link" data-section="contact">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="header__actions">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+                    <span class="theme-toggle__track">
+                        <span class="theme-toggle__thumb"></span>
+                    </span>
+                </button>
+                <button class="hamburger" id="hamburger" aria-controls="nav" aria-expanded="false">
+                    <span class="hamburger__line"></span>
+                    <span class="hamburger__line"></span>
+                    <span class="hamburger__line"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="hero" data-section="home">
+            <div class="hero__background" aria-hidden="true">
+                <div class="hero__gradient"></div>
+                <div class="hero__particles" id="hero-particles"></div>
+            </div>
+            <div class="container hero__container">
+                <div class="hero__content">
+                    <h1 class="hero__title">
+                        <span class="hero__title-line hero__title-line--1" data-text="We sculpt">We sculpt</span>
+                        <span class="hero__title-line hero__title-line--2" data-text="digital">digital</span>
+                        <span class="hero__title-line hero__title-line--3" data-text="realities">realities</span>
+                    </h1>
+                    <p class="hero__subtitle">From neon-lit interfaces to immersive experiences, we craft the future of web interactions.</p>
+                    <div class="hero__actions">
+                        <a href="#services" class="btn btn--primary btn--large">Explore Services</a>
+                        <a href="#gallery" class="btn btn--outline btn--large">View Gallery</a>
+                    </div>
+                </div>
+                <div class="hero__visual">
+                    <div class="hero__mockup">
+                        <div class="mockup__browser">
+                            <div class="mockup__browser-bar">
+                                <span class="mockup__dot"></span>
+                                <span class="mockup__dot"></span>
+                                <span class="mockup__dot"></span>
+                            </div>
+                            <div class="mockup__browser-body">
+                                <div class="mockup__code">
+                                    <span class="mockup__line"></span>
+                                    <span class="mockup__line"></span>
+                                    <span class="mockup__line"></span>
+                                    <span class="mockup__line"></span>
+                                    <span class="mockup__line"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="#about" class="scroll-indicator" aria-label="Scroll to about">
+                <span class="scroll-indicator__line"></span>
+            </a>
+        </section>
+
+        <section id="about" class="about" data-section="about">
+            <div class="container about__container">
+                <header class="about__header section-header">
+                    <h2 class="section-title">About NeonPulse</h2>
+                    <p class="section-subtitle">Where code meets creativity to ignite unparalleled experiences.</p>
+                </header>
+                <div class="about__grid">
+                    <article class="about__card about__card--mission">
+                        <div class="about__card-icon-wrapper">
+                            <svg class="about__card-icon" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                            </svg>
+                        </div>
+                        <h3 class="about__card-title">Mission</h3>
+                        <p class="about__card-text">To push the boundaries of digital artistry and engineer interfaces that feel alive.</p>
+                    </article>
+                    <article class="about__card about__card--vision">
+                        <div class="about__card-icon-wrapper">
+                            <svg class="about__card-icon" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="3"/>
+                                <path d="M12 1v6m0 6v6m11-7h-6m-6 0H1m20.5-4.5L16 12l4.5 4.5M3.5 7.5L8 12l-4.5 4.5"/>
+                            </svg>
+                        </div>
+                        <h3 class="about__card-title">Vision</h3>
+                        <p class="about__card-text">A world where every pixel serves a purpose and every interaction sparks emotion.</p>
+                    </article>
+                    <article class="about__card about__card--values">
+                        <div class="about__card-icon-wrapper">
+                            <svg class="about__card-icon" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                            </svg>
+                        </div>
+                        <h3 class="about__card-title">Values</h3>
+                        <p class="about__card-text">Craftsmanship, innovation, and fearless experimentation drive every project.</p>
+                    </article>
+                </div>
+                <div class="about__story">
+                    <figure class="about__figure">
+                        <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=60" alt="Creative team collaborating" class="about__img">
+                        <figcaption class="about__caption">Our diverse team of designers & developers</figcaption>
+                    </figure>
+                    <div class="about__story-content">
+                        <h3 class="about__story-title">The Genesis</h3>
+                        <p class="about__story-text">Born in a neon-lit basement in 2020, NeonPulse started as a rebellion against bland corporate templates. We fused glitch-art with minimalism, creating experiences that pulse with energy.</p>
+                        <p class="about__story-text">Today, we’re a collective of 23 creatives across 4 continents, shipping award-winning projects for brands that dare to be different.</p>
+                        <div class="about__stats">
+                            <div class="stat">
+                                <strong class="stat__num" data-target="127">0</strong>
+                                <span class="stat__label">Projects Launched</span>
+                            </div>
+                            <div class="stat">
+                                <strong class="stat__num" data-target="63">0</strong>
+                                <span class="stat__label">Design Awards</span>
+                            </div>
+                            <div class="stat">
+                                <strong class="stat__num" data-target="99.7">0</strong>
+                                <span class="stat__label">Client Happiness %</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="services" data-section="services">
+            <div class="services__background" aria-hidden="true">
+                <div class="services__gradient"></div>
+            </div>
+            <div class="container services__container">
+                <header class="services__header section-header">
+                    <h2 class="section-title">Services</h2>
+                    <p class="section-subtitle">From zero to launch, we handle the entire spectrum of digital craftsmanship.</p>
+                </header>
+                <div class="services__grid">
+                    <article class="service">
+                        <div class="service__front">
+                            <div class="service__icon-wrapper">
+                                <svg class="service__icon" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                                </svg>
+                            </div>
+                            <h3 class="service__title">Web Experiences</h3>
+                            <p class="service__teaser">Immersive, responsive, and lightning-fast websites that convert visitors into fans.</p>
+                        </div>
+                        <div class="service__back">
+                            <h3 class="service__title">Web Experiences</h3>
+                            <ul class="service__list">
+                                <li>Custom Design Systems</li>
+                                <li>React / Vue / Svelte</li>
+                                <li>Headless CMS Integration</li>
+                                <li>Performance Optimization</li>
+                                <li>Accessibility Audit</li>
+                            </ul>
+                        </div>
+                    </article>
+                    <article class="service">
+                        <div class="service__front">
+                            <div class="service__icon-wrapper">
+                                <svg class="service__icon" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                                    <line x1="8" y1="21" x2="16" y2="21"/>
+                                    <line x1="12" y1="17" x2="12" y2="21"/>
+                                </svg>
+                            </div>
+                            <h3 class="service__title">Mobile Apps</h3>
+                            <p class="service__teaser">Native & cross-platform apps that feel as good as they look.</p>
+                        </div>
+                        <div class="service__back">
+                            <h3 class="service__title">Mobile Apps</h3>
+                            <ul class="service__list">
+                                <li>iOS & Android</li>
+                                <li>React Native / Flutter</li>
+                                <li>UI/UX Prototyping</li>
+                                <li>App Store Optimization</li>
+                                <li>Backend Integration</li>
+                            </ul>
+                        </div>
+                    </article>
+                    <article class="service">
+                        <div class="service__front">
+                            <div class="service__icon-wrapper">
+                                <svg class="service__icon" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+                                    <polyline points="3.27 6.96 12 12.01 20.73 6.96"/>
+                                    <line x1="12" y1="22.08" x2="12" y2="12"/>
+                                </svg>
+                            </div>
+                            <h3 class="service__title">Branding</h3>
+                            <p class="service__teaser">Logo to full identity systems that make brands unforgettable.</p>
+                        </div>
+                        <div class="service__back">
+                            <h3 class="service__title">Branding</h3>
+                            <ul class="service__list">
+                                <li>Brand Strategy</li>
+                                <li>Logo & Visual Identity</li>
+                                <li>Motion Graphics</li>
+                                <li>Brand Guidelines</li>
+                                <li>Collateral Design</li>
+                            </ul>
+                        </div>
+                    </article>
+                    <article class="service">
+                        <div class="service__front">
+                            <div class="service__icon-wrapper">
+                                <svg class="service__icon" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M4 11a9 9 0 0 1 9 9M4 4a16 16 0 0 1 16 16"/>
+                                    <circle cx="5" cy="19" r="1"/>
+                                </svg>
+                            </div>
+                            <h3 class="service__title">Growth Hacking</h3>
+                            <p class="service__teaser">Data-driven experiments that skyrocket user acquisition & retention.</p>
+                        </div>
+                        <div class="service__back">
+                            <h3 class="service__title">Growth Hacking</h3>
+                            <ul class="service__list">
+                                <li>SEO & SEM</li>
+                                <li>Conversion Rate Optimization</li>
+                                <li>A/B Testing</li>
+                                <li>Analytics Setup</li>
+                                <li>Marketing Automation</li>
+                            </ul>
+                        </div>
+                    </article>
+                    <article class="service">
+                        <div class="service__front">
+                            <div class="service__icon-wrapper">
+                                <svg class="service__icon" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+                                    <polyline points="3.27 6.96 12 12.01 20.73 6.96"/>
+                                    <line x1="12" y1="22.08" x2="12" y2="12"/>
+                                </svg>
+                            </div>
+                            <h3 class="service__title">E-commerce</h3>
+                            <p class="service__teaser">Headless storefronts that load instantly and sell globally.</p>
+                        </div>
+                        <div class="service__back">
+                            <h3 class="service__title">E-commerce</h3>
+                            <ul class="service__list">
+                                <li>Shopify / WooCommerce</li>
+                                <li>Custom Checkout</li>
+                                <li>Payment Gateways</li>
+                                <li>Inventory Sync</li>
+                                <li>Multi-language</li>
+                            </ul>
+                        </div>
+                    </article>
+                    <article class="service">
+                        <div class="service__front">
+                            <div class="service__icon-wrapper">
+                                <svg class="service__icon" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <polygon points="12 2 2 7 12 12 22 7 12 2"/>
+                                    <polyline points="2 17 12 22 22 17"/>
+                                    <polyline points="2 12 12 17 22 12"/>
+                                </svg>
+                            </div>
+                            <h3 class="service__title">3D / AR</h3>
+                            <p class="service__teaser">WebGL, Three.js & AR filters that blur the line between real and digital.</p>
+                        </div>
+                        <div class="service__back">
+                            <h3 class="service__title">3D / AR</h3>
+                            <ul class="service__list">
+                                <li>WebGL Development</li>
+                                <li>Three.js Experiences</li>
+                                <li>AR Filters (Snap/IG)</li>
+                                <li>Product Configurators</li>
+                                <li>Virtual Showrooms</li>
+                            </ul>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="gallery" class="gallery" data-section="gallery">
+            <div class="container gallery__container">
+                <header class="gallery__header section-header">
+                    <h2 class="section-title">Gallery</h2>
+                    <p class="section-subtitle">A curated glimpse into our recent experiments & launches.</p>
+                </header>
+                <div class="gallery__filter" role="tablist" aria-label="Filter gallery">
+                    <button class="gallery__btn active" role="tab" aria-selected="true" data-filter="all">All</button>
+                    <button class="gallery__btn" role="tab" aria-selected="false" data-filter="web">Web</button>
+                    <button class="gallery__btn" role="tab" aria-selected="false" data-filter="app">App</button>
+                    <button class="gallery__btn" role="tab" aria-selected="false" data-filter="branding">Branding</button>
+                    <button class="gallery__btn" role="tab" aria-selected="false" data-filter="motion">Motion</button>
+                </div>
+                <div class="gallery__grid" id="gallery-grid">
+                    <figure class="gallery__item" data-category="web">
+                        <img src="https://images.unsplash.com/photo-1547658719-da2b51169166?auto=format&fit=crop&w=800&q=60" alt="Project Aurora" class="gallery__img">
+                        <figcaption class="gallery__caption">
+                            <strong>Project Aurora</strong>
+                            <span>Web Experience</span>
+                        </figcaption>
+                    </figure>
+                    <figure class="gallery__item" data-category="app">
+                        <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&w=800&q=60" alt="FitnessPro App" class="gallery__img">
+                        <figcaption class="gallery__caption">
+                            <strong>FitnessPro</strong>
+                            <span>Mobile App</span>
+                        </figcaption>
+                    </figure>
+                    <figure class="gallery__item" data-category="branding">
+                        <img src="https://images.unsplash.com/photo-1586953208448-b95a79798f07?auto=format&fit=crop&w=800&q=60" alt="Nebula rebrand" class="gallery__img">
+                        <figcaption class="gallery__caption">
+                            <strong>Nebula</strong>
+                            <span>Brand Identity</span>
+                        </figcaption>
+                    </figure>
+                    <figure class="gallery__item" data-category="motion">
+                        <img src="https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?auto=format&fit=crop&w=800&q=60" alt="Motion reel" class="gallery__img">
+                        <figcaption class="gallery__caption">
+                            <strong>Motion Reel 2025</strong>
+                            <span>Animation</span>
+                        </figcaption>
+                    </figure>
+                    <figure class="gallery__item" data-category="web">
+                        <img src="https://images.unsplash.com/photo-1558655146-d09347e92766?auto=format&fit=crop&w=800&q=60" alt="SaaS platform" class="gallery__img">
+                        <figcaption class="gallery__caption">
+                            <strong>CloudFlow</strong>
+                            <span>SaaS Platform</span>
+                        </figcaption>
+                    </figure>
+                    <figure class="gallery__item" data-category="app">
+                        <img src="https://images.unsplash.com/photo-1607252650355-f7fd0460ccdb?auto=format&fit=crop&w=800&q=60" alt="Crypto wallet" class="gallery__img">
+                        <figcaption class="gallery__caption">
+                            <strong>CryptoVault</strong>
+                            <span>FinTech App</span>
+                        </figcaption>
+                    </figure>
+                    <figure class="gallery__item" data-category="branding">
+                        <img src="https://images.unsplash.com/photo-1626785774573-4b799315345d?auto=format&fit=crop&w=800&q=60" alt="Coffee brand" class="gallery__img">
+                        <figcaption class="gallery__caption">
+                            <strong>BrewLab</strong>
+                            <span>Brand & Packaging</span>
+                        </figcaption>
+                    </figure>
+                    <figure class="gallery__item" data-category="motion">
+                        <img src="https://images.unsplash.com/photo-1611224923853-80b023f02d71?auto=format&fit=crop&w=800&q=60" alt="3D animation" class="gallery__img">
+                        <figcaption class="gallery__caption">
+                            <strong>Glassmorphism 3D</strong>
+                            <span>Motion Graphics</span>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="gallery__load-more">
+                    <button class="btn btn--outline" id="gallery-load">Load More</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonials" class="testimonials" data-section="testimonials">
+            <div class="container testimonials__container">
+                <header class="testimonials__header section-header">
+                    <h2 class="section-title">Testimonials</h2>
+                    <p class="section-subtitle">Don’t take our word for it—hear it from the rebels we’ve partnered with.</p>
+                </header>
+                <div class="testimonials__slider" id="testimonials-slider">
+                    <blockquote class="testimonial active">
+                        <p class="testimonial__text">“NeonPulse transformed our legacy platform into a futuristic powerhouse. Conversion rates up 340 %.”</p>
+                        <cite class="testimonial__author">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=200&q=60" alt="Avatar" class="testimonial__avatar">
+                            <span class="testimonial__name">Derek Ali</span>
+                            <span class="testimonial__role">CEO, SoundWave</span>
+                        </cite>
+                    </blockquote>
+                    <blockquote class="testimonial">
+                        <p class="testimonial__text">“The team’s obsession with micro-interactions made our app feel alive. 5-star reviews keep pouring in.”</p>
+                        <cite class="testimonial__author">
+                            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=200&q=60" alt="Avatar" class="testimonial__avatar">
+                            <span class="testimonial__name">Sarah Nguyen</span>
+                            <span class="testimonial__role">Founder, FitFlow</span>
+                        </cite>
+                    </blockquote>
+                    <blockquote class="testimonial">
+                        <p class="testimonial__text">“They didn’t just deliver a website; they delivered a statement. Our brand equity skyrocketed.”</p>
+                        <cite class="testimonial__author">
+                            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=200&q=60" alt="Avatar" class="testimonial__avatar">
+                            <span class="testimonial__name">Marcus Cole</span>
+                            <span class="testimonial__role">Marketing Director, Vertex</span>
+                        </cite>
+                    </blockquote>
+                </div>
+                <div class="testimonials__nav">
+                    <button class="testimonials__btn" id="testimonials-prev" aria-label="Previous testimonial">‹</button>
+                    <div class="testimonials__dots" id="testimonials-dots"></div>
+                    <button class="testimonials__btn" id="testimonials-next" aria-label="Next testimonial">›</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact" data-section="contact">
+            <div class="contact__background" aria-hidden="true">
+                <div class="contact__gradient"></div>
+            </div>
+            <div class="container contact__container">
+                <header class="contact__header section-header">
+                    <h2 class="section-title">Let’s create the future</h2>
+                    <p class="section-subtitle">Have a project? A wild idea? Or just want to say hi? Drop a line.</p>
+                </header>
+                <div class="contact__grid">
+                    <form class="contact__form" id="contact-form" novalidate>
+                        <div class="form-group">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" id="name" name="name" class="form-input" required aria-required="true">
+                            <span class="form-error" id="name-error"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" id="email" name="email" class="form-input" required aria-required="true">
+                            <span class="form-error" id="email-error"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="budget" class="form-label">Budget Range</label>
+                            <select id="budget" name="budget" class="form-select">
+                                <option value="">Select budget</option>
+                                <option value="5-10k">$5k – $10k</option>
+                                <option value="10-25k">$10k – $25k</option>
+                                <option value="25-50k">$25k – $50k</option>
+                                <option value="50k+">$50k+</option>
+                            </select>
+                        </div>
+                        <div class="form-group form-group--full">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea id="message" name="message" class="form-textarea" rows="5" required aria-required="true"></textarea>
+                            <span class="form-error" id="message-error"></span>
+                        </div>
+                        <button type="submit" class="btn btn--primary btn--full">Send Message</button>
+                        <p class="form-status" id="form-status"></p>
+                    </form>
+                    <aside class="contact__info">
+                        <div class="contact__block">
+                            <h3 class="contact__title">Email</h3>
+                            <a href="mailto:hello@neonpulse.studio" class="contact__link">hello@neonpulse.studio</a>
+                        </div>
+                        <div class="contact__block">
+                            <h3 class="contact__title">Phone</h3>
+                            <a href="tel:+15551234567" class="contact__link">+1 (555) 123-4567</a>
+                        </div>
+                        <div class="contact__block">
+                            <h3 class="contact__title">Office</h3>
+                            <address class="contact__address">
+                                88 Neon Plaza<br>
+                                Circuit Avenue<br>
+                                San Francisco, CA 94105
+                            </address>
+                        </div>
+                        <div class="contact__social">
+                            <a href="https://twitter.com/neonpulse" class="contact__social-link" aria-label="Twitter" target="_blank" rel="noopener">
+                                <svg class="contact__social-icon" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M23.643 4.937c-.835.37-1.732.62-2.675.733a4.67 4.67 0 0 0 2.048-2.578 9.3 9.3 0 0 1-2.958 1.13a4.66 4.66 0 0 0-7.938 4.25 13.229 13.229 0 0 1-9.602-4.868c-.333.564-.523 1.234-.523 1.962 0 1.61.82 3.027 2.068 3.863a4.63 4.63 0 0 1-2.11-.583v.06a4.66 4.66 0 0 0 3.737 4.568 4.69 4.69 0 0 1-2.104.08 4.661 4.661 0 0 0 4.352 3.234 9.348 9.348 0 0 1-5.786 1.995 9.5 9.5 0 0 1-1.112-.065 13.175 13.175 0 0 0 7.14 2.093c8.57 0 13.255-7.098 13.255-13.254 0-.2-.005-.402-.014-.602a9.47 9.47 0 0 0 2.323-2.41z"/>
+                                </svg>
+                            </a>
+                            <a href="https://dribbble.com/neonpulse" class="contact__social-link" aria-label="Dribbble" target="_blank" rel="noopener">
+                                <svg class="contact__social-icon" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 24C5.373 24 0 18.627 0 12S5.373 0 12 0s12 5.373 12 12-5.373 12-12 12zm8.25-10.5c.01-.16.03-.33.03-.5C20.28 6.375 16.575 3 12 3c-1.335 0-2.603.315-3.75.885l.21.39C9.66 6.015 12.33 7.5 15.54 7.5c2.475 0 4.14-.99 5.46-2.04.555 1.02.915 2.19.99 3.435l-1.74.975zm-6.06 6.885c1.905-1.26 4.17-2.115 6.585-2.115.45 0 .87.06 1.305.135-.33.75-.69 1.47-1.08 2.16-1.875-.72-4.17-.72-6.165.09-.555-.75-1.035-1.56-1.44-2.415l.795 2.145zm-3.33-4.665c1.905-2.07 4.62-3.3 7.56-3.3 1.38 0 2.67.315 3.84.87-.99.99-2.34 1.755-4.14 2.22-1.125-1.26-2.46-2.34-3.96-3.12-1.02.51-1.935 1.2-2.7 2.04zM3.75 12c0 .39.03.78.09 1.155.03-.09.06-.18.09-.27 1.68-3.21 4.44-5.76 7.86-7.065C9.87 4.965 8.16 4.5 6.375 4.5c-2.07 0-3.99.63-5.58 1.71.33 2.46 1.44 4.68 3.18 6.33-.51-1.17-.78-2.46-.78-3.84zM12 20.25c3.24 0 6.135-1.395 8.16-3.615-.51.09-1.02.165-1.545.165-3.06 0-5.76-1.125-7.905-2.97-1.305 1.305-2.16 2.97-2.4 4.83 1.14.72 2.46 1.185 3.885 1.185 0 .03 0 .03 0 .03z"/>
+                                </svg>
+                            </a>
+                            <a href="https://instagram.com/neonpulse" class="contact__social-link" aria-label="Instagram" target="_blank" rel="noopener">
+                                <svg class="contact__social-icon" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer__container">
+            <div class="footer__brand">
+                <a href="#home" class="logo" aria-label="NeonPulse Home">
+                    <svg class="logo__icon" width="32" height="32" viewBox="0 0 40 40" fill="none" aria-hidden="true">
+                        <path d="M20 0L32.3205 7.67949L40 20L32.3205 32.3205L20 40L7.67949 32.3205L0 20L7.67949 7.67949L20 0Z" fill="url(#logoGradientFooter)"/>
+                        <defs>
+                            <linearGradient id="logoGradientFooter" x1="20" y1="0" x2="20" y2="40" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#FF0055"/>
+                                <stop offset="1" stop-color="#00F0FF"/>
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                    <span class="logo__text">NeonPulse</span>
+                </a>
+                <p class="footer__tagline">Crafting digital realities that pulse with life.</p>
+            </div>
+            <nav class="footer__nav" aria-label="Footer Navigation">
+                <ul class="footer__list">
+                    <li class="footer__item"><a href="#home" class="footer__link">Home</a></li>
+                    <li class="footer__item"><a href="#about" class="footer__link">About</a></li>
+                    <li class="footer__item"><a href="#services" class="footer__link">Services</a></li>
+                    <li class="footer__item"><a href="#gallery" class="footer__link">Gallery</a></li>
+                    <li class="footer__item"><a href="#testimonials" class="footer__link">Testimonials</a></li>
+                    <li class="footer__item"><a href="#contact" class="footer__link">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="footer__social">
+                <a href="https://twitter.com/neonpulse" class="footer__social-link" aria-label="Twitter" target="_blank" rel="noopener">
+                    <svg class="footer__social-icon" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M23.643 4.937c-.835.37-1.732.62-2.675.733a4.67 4.67 0 0 0 2.048-2.578 9.3 9.3 0 0 1-2.958 1.13a4.66 4.66 0 0 0-7.938 4.25 13.229 13.229 0 0 1-9.602-4.868c-.333.564-.523 1.234-.523 1.962 0 1.61.82 3.027 2.068 3.863a4.63 4.63 0 0 1-2.11-.583v.06a4.66 4.66 0 0 0 3.737 4.568 4.69 4.69 0 0 1-2.104.08 4.661 4.661 0 0 0 4.352 3.234 9.348 9.348 0 0 1-5.786 1.995 9.5 9.5 0 0 1-1.112-.065 13.175 13.175 0 0 0 7.14 2.093c8.57 0 13.255-7.098 13.255-13.254 0-.2-.005-.402-.014-.602a9.47 9.47 0 0 0 2.323-2.41z"/>
+                    </svg>
+                </a>
+                <a href="https://dribbble.com/neonpulse" class="footer__social-link" aria-label="Dribbble" target="_blank" rel="noopener">
+                    <svg class="footer__social-icon" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 24C5.373 24 0 18.627 0 12S5.373 0 12 0s12 5.373 12 12-5.373 12-12 12zm8.25-10.5c.01-.16.03-.33.03-.5C20.28 6.375 16.575 3 12 3c-1.335 0-2.603.315-3.75.885l.21.39C9.66 6.015 12.33 7.5 15.54 7.5c2.475 0 4.14-.99 5.46-2.04.555 1.02.915 2.19.99 3.435l-1.74.975zm-6.06 6.885c1.905-1.26 4.17-2.115 6.585-2.115.45 0 .87.06 1.305.135-.33.75-.69 1.47-1.08 2.16-1.875-.72-4.17-.72-6.165.09-.555-.75-1.035-1.56-1.44-2.415l.795 2.145zm-3.33-4.665c1.905-2.07 4.62-3.3 7.56-3.3 1.38 0 2.67.315 3.84.87-.99.99-2.34 1.755-4.14 2.22-1.125-1.26-2.46-2.34-3.96-3.12-1.02.51-1.935 1.2-2.7 2.04zM3.75 12c0 .39.03.78.09 1.155.03-.09.06-.18.09-.27 1.68-3.21 4.44-5.76 7.86-7.065C9.87 4.965 8.16 4.5 6.375 4.5c-2.07 0-3.99.63-5.58 1.71.33 2.46 1.44 4.68 3.18 6.33-.51-1.17-.78-2.46-.78-3.84zM12 20.25c3.24 0 6.135-1.395 8.16-3.615-.51.09-1.02.165-1.545.165-3.06 0-5.76-1.125-7.905-2.97-1.305 1.305-2.16 2.97-2.4 4.83 1.14.72 2.46 1.185 3.885 1.185 0 .03 0 .03 0 .03z"/>
+                    </svg>
+                </a>
+                <a href="https://instagram.com/neonpulse" class="footer__social-link" aria-label="Instagram" target="_blank" rel="noopener">
+                    <svg class="footer__social-icon" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                    </svg>
+                </a>
+            </div>
+            <div class="footer__bottom">
+                <p class="footer__copy">© <span id="year">2025</span> NeonPulse Studio. All rights reserved.</p>
+                <a href="/privacy" class="footer__legal">Privacy Policy</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
